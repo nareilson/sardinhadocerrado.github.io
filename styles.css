@@ -43,16 +43,22 @@ img { display: block; max-width: 100%; }
   min-height: 76px;
   padding: 14px clamp(18px, 4vw, 56px);
   color: var(--white);
-  /* Promove para camada GPU — elimina repaint no scroll */
+  background: rgba(22, 38, 50, 0.32);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transform: translateZ(0);
-  will-change: background-color, box-shadow;
-  transition: background-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+  will-change: background, box-shadow;
+  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .site-header.is-scrolled {
   color: var(--white);
-  background-color: var(--teal);
+  background: rgba(25, 86, 99, 0.88);
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
   box-shadow: 0 4px 28px rgba(25, 38, 50, 0.28);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .brand {
@@ -786,6 +792,38 @@ h3 {
 
 .contact h2 { max-width: 780px; }
 .contact p  { color: rgba(255, 255, 255, 0.8); }
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-link-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.contact-link-item svg {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
 
 .contact-form {
   display: grid;
