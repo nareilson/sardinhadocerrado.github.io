@@ -14,14 +14,14 @@ Landing page estatica pronta para GitHub Pages.
 
 - `index.html`: textos, secoes, contatos e indicadores.
 - `styles.css`: cores, tipografia, espacamentos e responsividade.
-- `assets/hero-sardinho-do-cerrado.png`: imagem principal da primeira dobra.
+- `assets/hero-tambaqui-cerrado.png`: imagem principal da primeira dobra, com foco no tambaqui e no Cerrado.
 
 ## Topicos recomendados para preencher
 
 - Dados oficiais da FIETO e parceiros.
 - Cidade de implantacao da fabrica.
 - Capacidade produtiva mensal.
-- Especies de peixe utilizadas.
+- Origem e padrao do tambaqui utilizado.
 - Certificacoes sanitarias e ambientais.
 - Investimento estimado.
 - Empregos gerados.
